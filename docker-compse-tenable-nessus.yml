@@ -1,0 +1,15 @@
+version: "3.1"
+services:
+  nessus:
+    container_name: tenable-nessus
+    image: tenableofficial/nessus:latest
+    ports:
+      - "8834:8834/tcp"
+    environment:
+      USERNAME: 'enter_username_here'
+      PASSWORD: 'changeTHISpassword!1234'
+      #This requires an activation code below to use scanner.
+      ACTIVATION_CODE: '####-####-####-####-####'
+    #volumes:
+    # - './opt-nessus/:/opt/nessus/var/nessus'
+    restart: always
