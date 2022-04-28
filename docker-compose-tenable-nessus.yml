@@ -8,7 +8,7 @@ services:
     environment:
       USERNAME: 'enter_username_here'
       PASSWORD: 'changeTHISpassword!1234'
-      #This requires an activation code below to use scanner.
+      #An activation code is required to user the scanner
       ACTIVATION_CODE: '####-####-####-####-####'
     #volumes:
     # - './opt-nessus/:/opt/nessus/var/nessus'
